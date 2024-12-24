@@ -1,41 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Full-stuck developer portfolio">
-    <meta name="author" content="Darya Pogas">
-    <meta name="keywords" content="HTML, CSS, JavaScript, JS, Code The Dream">
-    <link rel="stylesheet" href="src/css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Full-stuck developer portfolio" />
+    <meta name="author" content="Darya Pogas" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, JS, Code The Dream" />
+    <link rel="stylesheet" href="src/css/index.css" />
     <title>Darya Pogas's portfolio</title>
-</head>
-<body>
-    <h1 class="header">Hi, my<br> name is <span>Darya</span></h1>
-    <section id="About">
-        <div class="descr">
-            <div class="descr__text">
-                <p> From Belarus, now calling Texas home. <br><span>Software developer</span> in the making, with roots in software automation engineering. <br> Obsessed with solving problems, building tools, and turning ideas into reality.</p>
-            </div>
+  </head>
+  <body>
+    <h1 class="header">
+      Hi, my<br />
+      name is <span>Darya</span>
+    </h1>
 
-            <div class="descr__photo">
-            <img class="photo" src="/src/img/photo_main.jpeg" alt="Darya photo" class="cover__img">
-            </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <div class="descr__wrapper">
+        <div class="descr__text">
+          <p>
+            From Belarus, now calling Texas home. <br /><span
+              >Software developer</span
+            >
+            in the making, with roots in software automation engineering. <br />
+            Obsessed with solving problems, building tools, and turning ideas
+            into reality.
+          </p>
         </div>
+
+        <div class="descr__photo">
+          <img
+            class="photo"
+            src="/src/img/photo_main.jpeg"
+            alt="Darya photo"
+            class="cover__img"
+          />
+        </div>
+      </div>
     </section>
-    <section id="Experience">
-        <h2>Experience</h2>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience__wrapper">
+        <div class="experience__job">
+          <div class="experience__title">
+            Quality Control and Standardization Engineer (Pharmaceutical
+            Industry)
+          </div>
+          <div class="experience__years">Jul 2013 - Dec 2018</div>
+          <div class="experience__descr">
             <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
+              <li>
+                I developed and implemented quality control systems to ensure
+                regulatory compliance with ISO and GMP standards, conducted
+                audits, and reviewed processes to maintain product quality.
+              </li>
             </ul>
+          </div>
+        </div>
+        <div class="experience__job">
+          <div class="experience__title"></div>
+          <div class="experience__years"></div>
+          <div class="experience__descr"></div>
+        </div>
+      </div>
     </section>
-    <section id="Connect">
-        <h2>Connect</h2>
-            <ol>
-            <li><a href="https://www.linkedin.com/in/darya-pogas/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/DaryaPogas" target="_blank">GitHub</a></li>
-            <li><a href="mailto:daryapogas@gmail.com" target="_blank">GMail</a></li>
-            </ol>
+
+    <section id="skills">
+      <h2>Skills</h2>
     </section>
-</body>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section id="connect">
+      <div class="connect__wrapper">
+        <div class="connect__item">
+          <a href="https://www.linkedin.com/in/darya-pogas/" target="_blank">
+            <img
+              src="/src/icons/icon_linkedin.png"
+              alt="LinkedIn"
+              class="connect__icon"
+            />
+          </a>
+        </div>
+        <div class="connect__item">
+          <a href="https://github.com/DaryaPogas" target="_blank">
+            <img
+              src="/src/icons/icon_github.png"
+              alt="GitHub"
+              class="connect__icon"
+            />
+          </a>
+        </div>
+        <div class="connect__item">
+          <a href="mailto:daryapogas@gmail.com" target="_blank">
+            <img
+              src="/src/icons/icon_gmail.png"
+              alt="GMail"
+              class="connect__icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
