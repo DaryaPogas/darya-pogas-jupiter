@@ -2,23 +2,43 @@
     box-sizing: border-box;
     margin: 20px;
 } */
+
+/* desctop-first approach */
+
+html {
+    font-family: "SF UI Text";
+}
+
 body {
     background-color: #f4f9fc;
+    font-optical-sizing: auto;
 }
+
 .header h1 {
     color: #0f1b61;
-    font-size: 180px;
+    font-size: 500px;
     text-align: left;
 }
+
 .header span {
-    font-size: 80px;
+    font-size: 100px;
     line-height: 10px;
+     @media screen and (max-width:375px) {
+        & {
+            font-size: 50px;
+        }
+    }
 }
 
 .navigation{
     position: sticky;
-    width: 120px;
+    max-width: 120px;
     color: #7f00e0;
+     @media screen and (max-width:375px) {
+        & {
+            display: none;
+        }
+    }
 }
 
 .descr__wrapper {
@@ -28,6 +48,13 @@ body {
     background-color: #ceeaed;
     padding: 0 auto;
     margin: 20px; 
+    align-items: center;
+    @media screen and (max-width:375px) {
+        & {
+            flex-direction:column-reverse;
+            text-align: left;
+        }
+    }
 }
 
 .descr__text{
@@ -35,7 +62,13 @@ body {
     margin:  auto 0;
     line-height: 28px;
     font-weight: 500;
+    @media screen and (max-width:375px) {
+        & {
+            font-size: 15px;
+        }
+    }
 }
+
 .descr__text span {
     color: #7f00e0;
     font-weight: 520;
@@ -44,13 +77,52 @@ body {
 .descr__photo img {
     display: block;
     margin: 10px auto 0 auto;
-    width: 300px;
+    max-width: 300px;
     height: auto;
+    box-shadow: 5px 0px 20px 0px black;
+    @media screen and (max-width:375px) {
+        & {
+            width: 200px;
+        }
+    }
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+
+.skills__grid span {
+    background-color: #ceeaed;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #ddd; 
+    gap: 10px;
 }
 
 .connect__wrapper{
     display: flex;
     justify-content: center;
     gap: 50px;
+    @media screen and (max-width:375px) {
+        & {
+            gap: 10px;
+            
+        }
+    }
 }
+
+.connect__icon {
+    width: 50px;
+    height: 50px;
+     @media screen and (max-width:375px) {
+        & {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
 
