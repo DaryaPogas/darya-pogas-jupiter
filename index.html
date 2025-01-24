@@ -5,126 +5,276 @@
     <meta name="description" content="Full-stuck developer portfolio" />
     <meta name="author" content="Darya Pogas" />
     <meta name="keywords" content="HTML, CSS, JavaScript, JS, Code The Dream" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="src/css/fonts.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/css/index.css" />
-    <link rel="icon" href="src/icons/icons8-female-user.gif" type="image/gif">
-    <title>Darya Pogas's portfolio</title>
+    <link rel="icon" href="src/icons/icons8-female-user.gif" type="image/gif" />
+    <title>Darya Pogas</title>
   </head>
+
+  <header></header>
+
+  <body>
     <nav class="navigation">
-      <span><!-- <img src="/src/icons/DP_logo.png" alt="DP" class="DP__icon"> --></span>
-        <span><a href="#about"> About</a></span>
-        <span><a href="#experience">Experience</a></span>
-        <span><a href="#skills">Skills</a></span>
-        <span><a href="#projects">Projects</a></span>
-        <span><a href="#connect">Connect</a></span>
+      <div class="logo">DP</div>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      
+      <div class="menu" id="menu">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <div class="contact__me">
+        <a href="#leave__message">Contact Me</a>
+      </div>
     </nav>
- <body>
-    <h1 class="header">
-      Hi, I'm
-       <span>Darya</span>
-    </h1>
+
+    <aside class="sidepanel">
+      <a href="https://github.com/DaryaPogas" target="_blank">
+        <img src="/src/icons/github.png" alt="GitHub" class="sidepanel__link" />
+      </a>
+      <a href="https://www.linkedin.com/in/darya-pogas/" target="_blank">
+        <img
+          src="/src/icons/linkedin-50.png"
+          alt="LinkedIn"
+          class="sidepanel__link"
+        />
+      </a>
+      <a href="mailto:daryapogas@gmail.com" target="_blank">
+        <img src="/src/icons/gmail.png" alt="GMail" class="sidepanel__link" />
+      </a>
+      <div class="sidepanel__divider"></div>
+      <div class="sidepanel__text"><span>Media</span></div>
+    </aside>
+
     <section id="about">
-      <div class="descr__wrapper">
-        <div class="descr__text">
-          <p>
-            From Belarus, now calling Texas home. <br /><span
-              >Software developer</span
-            >
-            in the making, with roots in software automation engineering. <br />
-            Obsessed with solving problems, building tools, and turning ideas
-            into reality.
-          </p>
+      <div class="about__wrapper">
+        <div class="about__photo">
+          <img src="/src/img/photo_main.jpeg" alt="Darya photo" class="photo" />
         </div>
 
-        <div class="descr__photo">
-          <img
-            class="photo"
-            src="/src/img/photo_main.jpeg"
-            alt="Darya photo"
-            class="cover__img"
-          />
+        <div class="about__text">
+          <p>
+            Hi, I'm <span>Darya Pogas.</span> From Belarus, now calling Texas
+            home. <br> Aspiring<span> Web developer</span> with roots in QA
+            automation engineering. I’m passionate about creating with care and
+            <span class="heart">&#10084;</span>
+          </p>
         </div>
       </div>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      <div class="experience__wrapper">
-        <div class="experience__job">
-          <div class="experience__title">
-            Quality Control and Standardization Engineer (Pharmaceutical
-            Industry)
-          </div>
-          <div class="experience__years">Jul 2013 - Dec 2018</div>
-          <div class="experience__descr">
+      <div class="container__experience">
+        <h2 class="title">Experience</h2>
+        <div class="divider"></div>
+
+        <div class="experience__wrapper">
+          <div class="experience__column">
+            <h3 class="title__experience">Education</h3>
             <ul>
               <li>
-                I developed and implemented quality control systems to ensure
-                regulatory compliance with ISO and GMP standards, conducted
-                audits, and reviewed processes to maintain product quality.
+                <div class="experience__item">
+                  <div class="experience__item-head">
+                    <div class="experience__item__icon">
+                      <img
+                        src="/src/icons/education_icon.png"
+                        alt="education"
+                      />
+                    </div>
+                    <div class="experience__text">
+                      <h4 class="position">
+                        International Sakharov Environmental Institute of
+                        Belarusian State University
+                      </h4>
+                      <div class="years">
+                        Bachelor's degree, Science | 2008-2013
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="experience__item">
+                  <div class="experience__item-head">
+                    <div class="experience__item__icon">
+                      <img
+                        src="/src/icons/education_icon.png"
+                        alt="education"
+                      />
+                    </div>
+                    <div class="experience__text">
+                      <h4 class="position">Dallas College</h4>
+                      <div class="years">Cloud Computing | 2019-2021</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="experience__item">
+                  <div class="experience__item-head">
+                    <div class="experience__item__icon">
+                      <img
+                        src="/src/icons/education_icon.png"
+                        alt="education"
+                      />
+                    </div>
+                    <div class="experience__text">
+                      <h4 class="position">Codemify</h4>
+                      <div class="years">
+                        QA Automation Engineer | 2022-2023
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="experience__item">
+                  <div class="experience__item-head">
+                    <div class="experience__item__icon">
+                      <img
+                        src="/src/icons/education_icon.png"
+                        alt="education"
+                      />
+                    </div>
+                    <div class="experience__text">
+                      <h4 class="position">Code the Dream</h4>
+                      <div class="years">Web Developer | 2024-current</div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="experience__job">
-          <div class="experience__title"></div>
-          <div class="experience__years"></div>
-          <div class="experience__descr"></div>
+
+          <div class="experience__column">
+            <h3 class="title__experience">Work</h3>
+            <ul>
+              <li>
+                <div class="experience__item">
+                  <div class="experience__item-head">
+                    <div class="experience__item__icon">
+                      <img src="/src/icons/work_icon.png" alt="work" />
+                    </div>
+                    <div class="experience__text">
+                      <h4 class="position">
+                        Quality Control and Standardization Engineer
+                        (Pharmaceutical Industry)
+                      </h4>
+                      <div class="years">AmantisMed, Belarus | 2013 - 2019</div>
+                    </div>
+                  </div>
+                  <div class="experience__item-body">
+                    Developed and implemented quality control systems to ensure
+                    regulatory compliance with ISO and GMP standards, conducted
+                    audits, and reviewed processes to maintain product quality.
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="experience__item">
+                  <div class="experience__item-head">
+                    <div class="experience__item__icon">
+                      <img src="/src/icons/work_icon.png" alt="work" />
+                    </div>
+                    <div class="experience__text">
+                      <h4 class="position">
+                        Software Quality Assurance Engineer
+                      </h4>
+                      <div class="years">Delekhomes, USA | 2022 - 2024</div>
+                    </div>
+                  </div>
+                  <div class="experience__item-body">
+                    Conducted comprehensive software testing and ensured
+                    adherence to Agile and ISO standards. Automated test scripts
+                    and identified defects to maintain software quality.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="skills">
       <div>
-        <h2>Skills</h2>
+        <h2 class="title">Skills</h2>
+        <div class="divider"></div>
         <ul></ul>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-
-    <section id="connect">
-      <div class="connect__wrapper">
-        <div class="connect__item">
-          <a href="https://www.linkedin.com/in/darya-pogas/" target="_blank">
-            <img
-              src="/src/icons/icon_linkedin.png"
-              alt="LinkedIn"
-              class="connect__icon"
-            />
-          </a>
-        </div>
-        <div class="connect__item">
-          <a href="https://github.com/DaryaPogas" target="_blank">
-            <img
-              src="/src/icons/icon_github.png"
-              alt="GitHub"
-              class="connect__icon"
-            />
-          </a>
-        </div>
-        <div class="connect__item">
-          <a href="mailto:daryapogas@gmail.com" target="_blank">
-            <img
-              src="/src/icons/icon_gmail.png"
-              alt="GMail"
-              class="connect__icon"
-            />
-          </a>
-        </div>
+      <div>
+        <h2 class="title">Projects</h2>
+        <div class="divider"></div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </section>
-    <footer class="footer">
-      
-    </footer>
-   <script src="src/js/index.js"></script> 
+
+    <section id="leave__message">
+      <div class="container__message">
+        <h2 class="title">Get In Touch</h2>
+        <div class="divider"></div>
+
+        <div class="media">
+          <a href="https://github.com/DaryaPogas" target="_blank">
+            <img src="/src/icons/github.png" alt="GitHub" class="media__link" />
+          </a>
+          <a href="https://www.linkedin.com/in/darya-pogas/" target="_blank">
+            <img
+              src="/src/icons/linkedin-50.png"
+              alt="LinkedIn"
+              class="media__link"
+            />
+          </a>
+          <a href="mailto:daryapogas@gmail.com" target="_blank">
+            <img src="/src/icons/gmail.png" alt="GMail" class="media__link" />
+          </a>
+        </div>
+
+        <form action="#" id="message__form">
+          <div class="message__input">
+            <!-- <img src="/src/icons/name_input_icon.png" alt="name_input"> -->
+            <input name="name" id="name" type="text" />
+            <label for="name">Name</label>
+          </div>
+          <div class="message__input">
+            <!-- <img src="/src/icons/email_input_icon.png" alt="email_input"> -->
+            <input name="email" id="email" type="email" />
+            <label for="email"> Email</label>
+          </div>
+          <div class="message__input">
+            <!-- <img src="/src/icons/textarea_icon.png" alt="message_input" class="text__icon"> -->
+            <textarea name="text" id="text"></textarea>
+            <label for="text"> Message</label>
+          </div>
+          <button class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <section id="messages__list">
+      <h2 class="title">Messages</h2>
+      <div class="divider"></div>
+      <ul></ul>
+    </section>
+
+    <footer class="footer"></footer>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
