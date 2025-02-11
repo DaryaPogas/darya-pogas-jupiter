@@ -3,4 +3,8 @@
 Portfolio project for Intro to Programming course with Code the Dream
 Darya Pogas
 
-https://github.com/DaryaPogas/Weather-or-Not-Here-s-Art
+
+This is my project hosted on Vercel. You can view it using the link below:
+[✅View project on Vercel](darya-pogas-jupiter.vercel.app)
+
+![main page](src/img/Screenshot.png)
